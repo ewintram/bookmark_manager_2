@@ -3,8 +3,8 @@
 ## User stories
  ```
 As a user,
-So that I can view a list of links ,
-I'd like to use a tool to show the list of links.
+So that I can quickly go to web sites I regularly visit ,
+I'd like to see a list of links on the homepage.
 ```
 ```
 As a User,
