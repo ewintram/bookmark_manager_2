@@ -10,6 +10,9 @@ class Students
   include DataMapper::Resource
   property :id, Serial
   property :name, String
+  property :age, Integer
+  property :DOB, Integer
+
 
 end
  DataMapper.finalize
@@ -17,6 +20,7 @@ end
  DataMapper.auto_upgrade!
 
 
-database_play = Students.create(:id => 2, :name => 'Valentina')
+student_11 = Students.create(:name => 'Nikolas', :age => 28, :DOB => 1985)
 database_play = Students.get(2)
 database_play.destroy
+#DELETE FROM "students" WHERE "id" = 1
