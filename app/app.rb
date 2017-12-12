@@ -1,14 +1,13 @@
 require "sinatra/base"
 require "data_mapper"
+require_relative "./models/link.rb"
 
 
 class BookmarkManagerApp < Sinatra::Base
 
-get "/" do
-erb(:index)
-end
-
-get "/add_link" do
+get "/links" do
+  @links = Link.all
+erb :links
 end
 
 

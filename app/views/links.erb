@@ -1,0 +1,12 @@
+<html>
+<h1> Here is the list of your bookmarks</h1>
+
+<ul id='links'>
+  <% @links.each do |link| %>
+    <li> Name: <%=link.link_name%>
+        URL: <%=link.link_url%>
+    </li>
+  <% end %>
+</ul>
+
+</html>
