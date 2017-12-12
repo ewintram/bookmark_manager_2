@@ -1,4 +1,5 @@
 require_relative "../../app/app.rb"
+require 'database_cleaner'
 
 feature "User can see a list of links on the homepage" do
 
@@ -10,4 +11,5 @@ feature "User can see a list of links on the homepage" do
       expect(page).to have_content('Google')
     end
   end
+
 end

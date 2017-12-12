@@ -1,6 +1,6 @@
 require_relative "../../app/app.rb"
 
-feature "User can create a new bookmark" do
+feature "User can create a new bookmark"  do
 
   scenario "Submission form has a submit button" do
     visit('links/new')
