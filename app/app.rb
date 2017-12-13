@@ -7,6 +7,10 @@ require_relative "./models/link.rb"
 
 class BookmarkManagerApp < Sinatra::Base
 
+get "/" do
+  "Hello"
+end
+
 get "/links" do
   @links = Link.all
 erb :'links/index'
