@@ -5,6 +5,8 @@ require 'capybara/rspec'
 require 'rspec'
 require 'sinatra'
 
+require_relative './features/web_helpers'
+
 require_relative '../app/app.rb'
 
 # File.join(__FILE__)[Dir["support/**/*.rb"]].each { |file| require file }

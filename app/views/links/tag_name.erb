@@ -1,0 +1,7 @@
+<html>
+<h1>Tags : </h1>
+<% @links_with_tag.each do |link| %>
+<li> <a href = <%=link.link_url%> > <%=link.link_name %> </a>
+  <% end %>
+</li>
+</html>

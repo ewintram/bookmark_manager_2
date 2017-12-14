@@ -13,8 +13,6 @@ end
 
 get "/links" do
   @links = Link.all
-  p @links.tags
-  p @links
   erb :'links/index'
 end
 
@@ -28,7 +26,12 @@ post '/links' do
   link.tags << tag
   link.save
   redirect '/links'
+end
 
+get '/tags/:tag_name' do
+  tag = Tag.first(tag_name: params[:tag_name])
+  @links_with_tag = tag ? tag.links : []
+  erb :'links/tag_name'
 end
 
 
