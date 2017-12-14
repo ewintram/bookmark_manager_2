@@ -26,5 +26,4 @@ feature "User can create a new bookmark"  do
       end
     end
 
-
 end

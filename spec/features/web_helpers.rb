@@ -21,3 +21,11 @@ def new_link_with_social_tag
   fill_in "tag_name", with: "social"
   click_button "Submit"
 end
+
+def new_link_with_multiple_tags
+  visit("links/new")
+  fill_in "link_name", with: "Tumblr"
+  fill_in "link_url", with: "http://www.tumblr.com"
+  fill_in "tag_name", with: "photo, blog, images"
+  click_button "Submit"
+end
