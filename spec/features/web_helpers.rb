@@ -31,7 +31,7 @@ def new_link_with_multiple_tags
 end
 
 def sign_up
-  visit('/signup')
+  visit('/users/new')
   fill_in 'email_address', with: 'example@hotmail.com'
   fill_in 'password', with: 'password'
   click_button('Sign up')
