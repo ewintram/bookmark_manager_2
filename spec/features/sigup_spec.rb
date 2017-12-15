@@ -26,6 +26,7 @@ feature 'sign up form' do
     fill_in 'password', with: 'password'
     fill_in 'confirm_password', with: 'different'
     click_button 'Sign up'
-    expect(page)
+    expect(page).to have_content "You failed to match your passwords!"
   end
+  
 end
