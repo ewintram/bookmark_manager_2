@@ -4,4 +4,6 @@ feature "add multiple tags" do
     link = Link.last
     expect(link.tags.map(&:tag_name)).to include('photo') and include('blog') and include('images')
   end
+# visit('/tags/photo')
+# expect page to have_content "Tumblr"
 end
