@@ -8,5 +8,4 @@ feature 'Filter links by tag' do
     expect(page).to have_content("Facebook")
     expect(page).not_to have_content("Tumblr")
   end
-
 end

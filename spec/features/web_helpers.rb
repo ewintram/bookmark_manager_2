@@ -29,3 +29,10 @@ def new_link_with_multiple_tags
   fill_in "tag_name", with: "photo, blog, images"
   click_button "Submit"
 end
+
+def sign_up
+  visit('/signup')
+  fill_in 'email_address', with: 'example@hotmail.com'
+  fill_in 'password', with: 'password'
+  click_button('Sign up')
+end
